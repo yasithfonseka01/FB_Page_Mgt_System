@@ -1,0 +1,93 @@
+/* Main dashboard container */
+.dashboard {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(135deg, #e0f7fa, #e0eafc); /* Subtle background gradient */
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Content container holding both Content and Profile sections */
+.dashboard--content {
+  background: #fff;
+  flex: 1;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard--content:hover {
+  transform: translateY(-5px); /* Hover effect for subtle movement */
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+/* Content section styling */
+.content {
+  flex: 2;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+  border: 1px solid #e0e0e0; /* Soft border */
+}
+
+.content:hover {
+  background-color: #f0f0f0; /* Lighter background on hover */
+}
+
+/* Profile section styling */
+.profile {
+  flex: 1;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+  max-width: 300px; /* Ensures profile section doesn't expand too wide */
+}
+
+.profile:hover {
+  background-color: #f0f0f0;
+}
+
+/* General typography */
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #394867;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #526d82;
+}
+
+/* Buttons within the content/profile (if applicable) */
+button {
+  background-color: #526d82;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #394867;
+}
+
+/* Optional: Add a footer or additional section if needed */
+.dashboard--footer {
+  background-color: #e0f7fa;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}

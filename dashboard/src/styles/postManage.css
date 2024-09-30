@@ -1,0 +1,181 @@
+/* General styles */
+.feed-list {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensure the feed takes full height */
+  background-color: #f4f4f4;
+}
+
+/* Header */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Add Post Button */
+.add-post-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.add-post-button:hover {
+  background-color: #0056b3;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 2px solid #000;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #c0bbbb;
+  font-weight: bold;
+}
+
+td {
+  word-wrap: break-word;
+}
+
+/* Action buttons */
+.update-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Optional: Add some space around the table */
+.table-container {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+/* Scroll behavior */
+body {
+  height: 100vh;
+  overflow-y: scroll; /* Enables vertical scrolling */
+  padding: 20px;
+  background-color: rgb(233, 233, 233);
+}
+
+.feed-list {
+  min-height: 100vh;
+  overflow-y: auto; /* Enable scrolling for the feed list */
+}
+
+/* Optional section to style API details */
+.api-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow-y: auto; /* In case the content gets too long, allow scrolling */
+}
+
+/* Modal backdrop to darken the background */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 999; /* Ensure it stays on top */
+}
+
+/* Modal container */
+.modal-container {
+  position: fixed;
+  top: 10%; /* Top middle of the screen */
+  left: 50%;
+  transform: translate(-50%, -10%); /* Centers horizontally */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensures the modal is on top of the backdrop */
+  width: 400px; /* Set a fixed width for the modal */
+  max-width: 90%; /* Responsive design */
+  max-height: 80vh; /* Prevent it from being too tall */
+  overflow-y: auto; /* Scroll if the content overflows */
+}
+
+/* Close button inside modal */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Pagination styles */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+}
+

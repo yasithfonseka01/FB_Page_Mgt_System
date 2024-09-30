@@ -1,0 +1,83 @@
+/* Modal overlay style */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* ensure it's above other content */
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%; /* responsive for smaller screens */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Close button style */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  textarea,
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Close button hover effect */
+  .close-btn:hover {
+    color: red;
+  }
+  

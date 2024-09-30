@@ -1,0 +1,61 @@
+.profile {
+    flex: 1;
+    background-color: #f4f4f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 450px; /* Increased size */
+    height: 450px; /* Keep aspect ratio */
+    border-radius: 50%; /* Circular image */
+    border: 5px solid #ddd; /* Border around image */
+    object-fit: cover; /* Cover aspect ratio */
+    margin-bottom: 20px; /* Space below image */
+}
+
+.user--detail p {
+    font-size: 1.2rem; /* Larger font size for readability */
+    margin: 5px 0; /* Margin around paragraphs */
+    color: #333; /* Darker text color for better contrast */
+}
+
+.edit {
+    background: #dde6dd;
+    padding: 12px;
+    border-radius: 10px;
+    color: #969393;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit .icon {
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.edit .icon:hover {
+    color: #007bff; /* Highlight icon on hover */
+}

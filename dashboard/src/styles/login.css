@@ -1,0 +1,117 @@
+/* Login.css */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #e0e6ef); /* Subtle background gradient */
+    perspective: 1000px; /* Adds perspective for 3D effect */
+    position: relative; /* Allow positioning of the tea-info section */
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px; /* Increased padding for more space */
+    width: 400px; /* Increased width for a larger container */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+    text-align: center;
+    transform: rotateY(-5deg) rotateX(5deg); /* 3D rotation effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    transform: rotateY(0deg) rotateX(0deg); /* Reset rotation on hover for effect */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.login-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.login-container input {
+    width: calc(100% - 20px); /* Adjusted to fit within the container with padding */
+    padding: 15px; /* Increased padding for more space inside textboxes */
+    margin-bottom: 20px; /* Increased margin between textboxes */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners for inputs */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for input fields */
+    font-size: 1rem; /* Increased font size for better readability */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3); /* Highlight shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+.login-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px; /* Increased padding for button */
+    border: none;
+    border-radius: 8px; /* Rounded corners for button */
+    cursor: pointer;
+    font-size: 1.2rem; /* Larger font size for button text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Style for tea-info section */
+.tea-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px; /* Adjust width as needed */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: rotateY(5deg) rotateX(-5deg); /* 3D effect for the section */
+}
+
+.tea-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tea-info img {
+   
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.tea-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Profile image styling */
+.profile-image {
+    border-radius: 50%; /* Circular profile image */
+    width: 80px; /* Smaller width for profile picture size */
+    height: 80px; /* Smaller height to maintain a circle */
+    object-fit: cover; /* Ensures the image fits well within the circle */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow around profile image */
+    margin-bottom: 15px;
+}
+

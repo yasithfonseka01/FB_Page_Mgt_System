@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(233, 233, 233);
+  padding: 20px;
+}
+
+/* Responsive styles */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  height: auto; /* Adjust height for smaller screens */
+}
+
+.logo {
+  text-align: center;
+  padding: 20px;
+  color: #27374d;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.menu--list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Media Query Example */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row; /* Change to row for larger screens */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .menu--list {
+    flex-direction: column; /* Stack items on smaller screens */
+  }
+
+  .menu--list .item {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust padding and margins for smaller screens */
+  body {
+    padding: 10px;
+  }
+}
+

@@ -1,0 +1,77 @@
+/* Insights Page Styles */
+.insights-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insights-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.api-details {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.api-details h2 {
+  text-align: center;
+  color: #333;
+}
+
+.api-details h3 {
+  margin-top: 10px;
+  color: #007bff;
+}
+
+.api-details pre {
+  background-color: #eef;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto; /* Ensure long lines are scrollable */
+}
+
+.api-details code {
+  color: #333;
+}
+
+/* General Styles */
+p {
+  color: #555;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+
+@media (max-width: 600px) {
+  .insights-page {
+    padding: 15px;
+  }
+  
+  .chart-container {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,176 @@
+/* Page Engagement Styles */
+.page-engagement {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.engagement-header {
+  font-size: 2rem; /* Further reduced size */
+  letter-spacing: 1px; 
+  color: #4e4e4e;
+  text-shadow: 2px 2px 0 #b2b2b2, 4px 4px 0 #b2b2b2, 6px 6px 0 #b2b2b2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section h2 {
+  font-size: 1.25rem; /* Further reduced size */
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container for Posts */
+.card-container {
+  display: flex; /* Changed to flex for better alignment */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 20px;
+  padding: 10px 0; /* Optional: Add some vertical padding */
+}
+
+/* Card Styles for Posts */
+.card {
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  width: 180px; /* Fixed width for cards */
+  padding: 15px; /* Adjusted padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-5px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(5, 1fr); /* Four equal columns */
+  gap: 20px; /* Space between cards */
+  padding: 10px 0; /* Optional: Add some vertical padding */
+}
+
+
+
+/* Post Image within Card */
+.post-image {
+  width: 100%;
+  height: 120px; /* Adjusted height */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+/* Title and Description Styles */
+.card-title {
+  font-size: 1rem; /* Further reduced size */
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 0.75rem; /* Further reduced size */
+  color: #666;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card-subtitle {
+  font-size: 0.8rem; /* Further reduced size */
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.card-value {
+  font-size: 1.2rem; /* Further reduced size */
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+/* Loading State */
+p {
+  font-size: 0.8rem; /* Further reduced size */
+  color: #777;
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Modal Container */
+.modal-container {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 400px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 14px; /* Reduced size */
+  cursor: pointer;
+  color: #333;
+}
+
+.show-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem; /* Adjust as needed */
+  color: #fff;
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-more:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+

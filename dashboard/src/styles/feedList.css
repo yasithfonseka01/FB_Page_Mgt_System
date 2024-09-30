@@ -1,0 +1,116 @@
+.feed-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .feed-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feed-image {
+    max-width: 80%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .feed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feed-title {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .feed-message {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .feed-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .eligible {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .likes-count {
+    color: #666;
+  }
+  
+  .comments {
+    width: 100%;
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .dropdown-content.show {
+    display: block;
+  }
+  
+  .comment {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .comment:last-child {
+    border-bottom: none;
+  }
+  
+  .comment p {
+    margin: 0;
+  }
+  
